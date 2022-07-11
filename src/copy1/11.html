@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="11.css" rel="stylesheet" type="text/css">
+
+    <title>学生信息管理系统</title>
+
+</head>
+
+<body onload="fill()" >
+<p  class="topic">学生信息管理系统</p>
+
+<!--//添加两个按钮-->
+<button class="shanchu" onclick="Delete()"> 删除信息 </button>
+<button class="add" onclick="New()"> 增加信息</button>
+
+<button  id="searchbox" class="searchingbox">搜索</button>
+<p  class="text-input" >  <input type="text"> </p>
+
+
+<!--//设置表头-->
+<table id="table" class="table">
+    <thead id="thead" data->
+    <tr>
+        <th scope="col" class="ID"> <input type="checkbox" id="all" onclick="All()"></th>
+        <th scope="col" class="note">序号</th>
+        <th scope="col" class="number">学号</th>
+        <th scope="col" class="name">姓名</th>
+        <th scope="col" class="gender">性别</th>
+        <th scope="col" class="college">学院</th>
+        <th scope="col" class="major">专业</th>
+        <th scope="col" class="grade">年级</th>
+        <th scope="col" class="class">班级</th>
+        <th scope="col" class="age">年龄</th>
+        <th scope="col" class="operate">操作</th>
+    </tr>
+    </thead>
+    <tbody id="tbody">
+    </tbody>
+    <tfoot>
+
+    <div id="pages">
+        <button id="next" class="next1" onclick="next()">下一页</button>
+        <button id="pre" class="pre1"onclick="pre()">上一页</button>
+    </div>
+
+
+
+    </tfoot>
+</table>
+
+
+
+<!--添加信息-->
+<div id="newAdd" class=" addNew">
+    <div class="modal modal-new" >
+        <div class="modar-header">
+            <p class="modar-title">输入学生信息</p>
+        </div>
+        <div class="modar-body">
+            <table id="new-table">
+                <tr><td>学号<input type="text" id="number"></td></tr>
+                <tr><td>姓名<input type="text" id="name"></td></tr>
+                <tr><td>性别<input type="text" id="gender"></td></tr>
+                <tr><td>学院<input type="text" id="college"></td></tr>
+                <tr><td>专业<input type="text" id="major"></td></tr>
+                <tr><td>年级<input type="text" id="grade"></td></tr>
+                <tr><td>班级<input type="text" id="class"></td></tr>
+                <tr><td>年龄<input type="text" id="age"></td></tr>
+                <tr><td class="button"><input type="button" value="新建" onclick="createNew()"><input type="button" value="关闭" onclick="Close()"></td></tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!--查看学生信息-->
+<div id="search">
+    <div class="modal modal-search">
+        <div class="modar-header">
+            <p class="modar-title">查询学生信息</p>
+        </div>
+        <div class="modar-body">
+            <table id="search-table">
+                <tr><td>学号:<input type="text" class="number"></td></tr>
+                <tr><td>姓名:<input type="text" class="name"></td></tr>
+                <tr><td>性别:<input type="text" class="gender"></td></tr>
+                <tr><td>学院:<input type="text" class="college"></td></tr>
+                <tr><td>专业:<input type="text" class="major"></td></tr>
+                <tr><td>年级:<input type="text" class="grade"></td></tr>
+                <tr><td>班级:<input type="text" class="class"></td></tr>
+                <tr><td>年龄:<input type="text" class="age"></td></tr>
+                <tr><td class="button"><input type="button" value="关闭" onclick="Close()"></td></tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!--修改学生信息-->
+<div id="modification1">
+    <div class="modal modal-modification">
+        <div class="modar-header">
+            <p class="modification1title">修改学生信息</p>
+        </div>
+        <div class="modification1-body">
+            <table id="modification-table">
+                <tr><td>学号:<input type="text" class="number1" id="number1"></td></tr>
+                <tr><td>姓名:<input type="text" class="name1" id="name1"></td></tr>
+                <tr><td>性别:<input type="text" class="gender1" id="gender1"></td></tr>
+                <tr><td>学院:<input type="text" class="college1" id="college1"></td></tr>
+                <tr><td>专业:<input type="text" class="major1" id="major1"></td></tr>
+                <tr><td>年级:<input type="text" class="grade1" id="grade1"></td></tr>
+                <tr><td>班级:<input type="text" class="class1" id="class1"></td></tr>
+                <tr><td>年龄:<input type="text" class="age1" id="age1"></td></tr>
+                <tr><td class="button"><input type="button" value="修正" onclick="Alter()"><input type="button" value="关闭" onclick="Close()"></td></tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script src="11.js" type="text/javascript"> </script>
+</html>

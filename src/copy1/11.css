@@ -1,0 +1,100 @@
+body{
+    text-align: center;
+}
+.topic{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #58C7C7;
+}
+.shanchu{
+    font-size: 18px;
+    top: 10px;
+    padding:5px 20px;
+    background-color: darkorange;
+    margin-left: 0px;
+}
+.add  {
+    font-size: 18px;
+    top: 10px;
+    padding:5px 20px;
+    background-color: darkorange;
+}
+.pre1 {
+    font-size: 18px;
+    top: 10px;
+    padding:5px 20px;
+    background-color: darkorange;
+}
+.next1{
+    font-size: 18px;
+    top: 10px;
+    padding:5px 20px;
+    background-color: darkorange;
+}
+.searchingbox{
+    font-size: 15px;
+    padding:5px 20px;
+    background-color: darkseagreen;
+    margin-left: 800px;
+}
+.text-input{
+    margin-left: 700px;
+    margin-top: -23px;
+    width: 900px;
+    height: 20px;
+}
+.table{
+    width:80%;
+    height: 100px;
+    margin: 10px  auto;
+    border-collapse: initial;
+    text-align: center;
+    font-size: 20px;
+}
+.addNew {
+    z-index: 99;
+    display: none;
+    height: 300px;
+    width: 250px;
+    top: 200px;
+    left: 650px;
+    background: azure;
+    position: absolute;
+}
+#search{
+    z-index: 99;
+    display: none;
+    height: 300px;
+    width: 250px;
+    top: 200px;
+    left: 650px;
+    background: azure;
+    position: absolute;
+}
+.modar-header {
+    text-align: center;
+}
+.modal{
+    text-align: center;
+}
+#modification1 {
+    z-index: 99;
+    display: none;
+    height: 300px;
+    width: 250px;
+    top: 200px;
+    left: 650px;
+    background: azure;
+    position: absolute;
+}
+#global{
+    position: relative;
+    display: flex;
+}
+
+
+
+
+
+
